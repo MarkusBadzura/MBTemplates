@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+    XML-Datei liegt im Ordner xml in der Projektdatei
+    Schlagwort: 1 Schlagwort erlaubt
+    Hilfelink: Dort ist die Frage dargestellt, welche in der Listenauswahl erscheint.
+    Antwort: Hier ist html-Format vorgesehen (Achtung: &lt und &gt für < und > verwenden
+    @author Makus Badzura
+    @version 1.0
+-->
+
+<Hilfe>
+        <Hilfetext>
+                <Schlagwort>Beenden</Schlagwort>
+                <Hilfelink>Wie kann das Programm beendet werden?</Hilfelink>
+                <Antwort>Um das Programm zu beenden, stehen Ihnen folgende Möglichkeiten zur Verfügung.&lt;br&gt;
+                            &lt;ul&gt;
+                           &lt;li&gt;Menüpunkt DATEI - BEENDEN&lt;/li&gt;
+                            &lt;li&gt;Tastenkombination ALT + F4&lt;/li&gt;
+                             &lt;li&gt;X in der Titelleiste&lt;/li&gt;
+                             &lt;/ul&gt;
+                </Antwort>
+        </Hilfetext>
+</Hilfe>
