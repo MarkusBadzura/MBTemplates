@@ -1,0 +1,45 @@
+Um das Hilfetemplate zu Verwenden wird zusätzlich zum Template-Jar noch die 
+JDOM-Jar Version 2 benötigt.
+
+Das Hilfefenster nimmt zum Start 1/3 des Bildschirmes auf der rechten Bild-
+schirmseite ein. Es gliedert sich in 2 Bestandteile.
+
+Bestandteil 1: Tabelle Inhalt
+Hier werden alle vordefinierte Fragen aufgelistet, die für die Anwendung
+erstellt wurden. 
+
+Bestandteil 2: Tabelle Suche
+Hier wird ein Suchbegriff oder mehrere Suchbegriffe vom Benutzer eingegeben.
+Es wird nach Betättigen der Schaltfläche jedes vorhandene Fragen-Objekt ver-
+glichen, ob das Schlagwort in der Benutzersuche auftritt. Es werden nur die 
+Fragen angeboten, die auch das Suchwort enthalten.
+
+Aufbau der XML-Datei
+
+Schlagwort: Es wird ein Schlagwort für den Hilfelink eingetragen
+Hilfelink: Dieser enthält die Frage
+Antwort:    Selbsterklärend xD. HTML-Tags sind zu verwenden, um z. B. eine
+            Listenansicht zu erhalten, oder Hervorhebungen. < und > ist aller-
+            dings nicht zulässig. Hier verwendet man für < &lt; und für > &gt;
+
+Einbindung:
+
+Die MBTemplates.jar in die Libraries einbinden und dann importieren
+
+import hilfefenster.*;
+
+Schnittstelle:
+
+        Hilfe h = new Hilfe();
+        h.setHilfe(String Fenstertitel, Url Icon, String xmlpfad);
+
+Fenstertitel:   Welcher Titel soll in der Titelleiste des Hilfefensters ange-
+                zeigt werden.
+
+Icon:           Welches Icon soll in der Titelleiste des Hilfefensters angezeigt
+                werden.
+
+xmlpfad:        Pfadangabe als String zur xml-Datei mit den Hilfelinks. Der Name
+                der XML ist frei wählbar. Der Aufbau muss allerdings identisch 
+                mit der hochgeladenen help.xml sein.
+            
