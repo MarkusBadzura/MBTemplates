@@ -1,0 +1,32 @@
+Klasse, welche einen Errorlog schreibt
+
+Benötigte Parameter:
+
+String turnus   Wenn als Parameter ein "t" übergeben wird, wird täglich eine 
+                neue Errorlog-Datei angelegt. Jeder andere String sorgt dafür,
+                dass monatlich eine Errorlog - Datei angelegt wird. Alle Error-
+                meldungen werden in diese Datei mit Tag, Stunde und Minute 
+                gespeichert.
+
+String pfad     Pfadangabe bis zum Zielordner, in welchen die ErrorLog-Dateien
+                erstellt werden sollen.
+
+Um einen Eintrag zu erstellen, dient die Methode schreibe, welche 2 Parameter
+erwartet.
+
+String inhalt   Inhalt der Fehlermeldung. Dieser kann entweder manuell erstellt 
+                sein, oder auch das Ergebnis einer Exception. 
+
+String art      Eignet sich, um Fehlerarten (z. B. Klasse_GUI-Error) zu übergeben
+                und somit in der Errorlog-Datei erkennen zu können, wo der Fehler
+                aufgetreten ist.
+
+Auf Errorlog zugreifen
+
+Um auf die Klasse zuzugreifen zu können, muss Sie importiert werden. Nun noch
+ein Objekt der Klasse erzeugen und loslegen.
+
+Beispiel
+
+Errorlog el = new Errorlog("m","e:/xyz");
+el.schreibe("Division durch Null","Klasse Mathe, Methode Division");
